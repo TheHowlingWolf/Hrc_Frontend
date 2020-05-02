@@ -1,11 +1,11 @@
 import React from "react";
-import Menu from "./Menu";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 const Base = ({ children }) => {
   return (
     <div>
-      <Menu></Menu>
+      <Navbar></Navbar>
       {children}
       <Footer></Footer>
     </div>
