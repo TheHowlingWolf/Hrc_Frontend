@@ -30,5 +30,40 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<script src="./js/typed.js"></script>
+<script>
+  var typed = new Typed('.occs', {
+    strings: ['House Helsinki', 'House Of Trust', 'A Team Of '],
+    typeSpeed: 60,
+    backSpeed: 60,
+    loop: true
+  });
+</script>
+
+<!-- scripts -->
+<script src="./js/particles.js"></script>
+<script src="./js/app.js"></script>
+
+<!-- stats.js -->
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'relative';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function () {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
 
 </html>
