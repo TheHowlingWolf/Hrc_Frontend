@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import Registration from './Registration';
-// import NavBar from './NavBar';
+import Navbar from './Navbar';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component{
     render(){
         return(
             <div>
+                <Navbar/>
                 <Switch>
                     
                     <Route path='/Registration'  component={Registration}/>
