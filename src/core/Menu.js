@@ -4,3 +4,5 @@ import { Link, withRouter } from "react-router-dom";
 const Menu = ({ history }) => {
   return <div></div>;
 };
+
+export default Menu;
