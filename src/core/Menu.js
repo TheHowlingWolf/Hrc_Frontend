@@ -1,8 +1,11 @@
-import React, { Fragment } from "react";
-import { Link, withRouter } from "react-router-dom";
+import React from "react";
 
-const Menu = ({ history }) => {
-  return <div></div>;
+const Menu = () => {
+  return (
+    <div>
+      <h1>hello</h1>
+    </div>
+  );
 };
 
 export default Menu;
