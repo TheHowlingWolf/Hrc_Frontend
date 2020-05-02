@@ -10,7 +10,7 @@ const Feature = () => {
           <div className="col-md-12 align-self-end">
             <h2
               className="display-3 font-weight-bold"
-              style={{ padding: "30px" }}
+              style={{ padding: "20px", color: "#222326" }}
             >
               We Are <span className="occs" style={{ color: "white" }}></span>
             </h2>
