@@ -1,10 +1,10 @@
 import React from "react";
-import Members from "../members/Members";
 import Base from "./Base";
+import Member from "../members/Members";
 const IndiMembers = () => {
   return (
     <Base>
-      <Members></Members>
+      <Member></Member>
     </Base>
   );
 };

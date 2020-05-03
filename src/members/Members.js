@@ -1,6 +1,5 @@
 import React from "react";
 import { Jumbotron } from "reactstrap";
-// import SelfQ from "../../img/art-educational-paper-phrase-142815.jpg";
 import pic from "../img/naturephotography.jpg";
 import "./members.css";
 
