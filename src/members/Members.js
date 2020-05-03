@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Jumbotron } from "reactstrap";
 import pic from "../img/naturephotography.jpg";
 import "./members.css";
 
-const Members = () => {
+const Members = ({ member }) => {
+  console.log(member);
   return (
     <section
       className="membeers text-light pb-5"
@@ -16,7 +17,9 @@ const Members = () => {
             src="./naturephotography.jpg"
             alt=""
           />
-          <h1 className="masthead-heading text-uppercase mb-0">Name Here</h1>
+          <h1 className="masthead-heading text-uppercase mb-0">
+            {member.name}
+          </h1>
 
           <div className="divider-custom divider-light">
             <div className="divider-custom-line"></div>
@@ -29,7 +32,7 @@ const Members = () => {
           <p className="masthead-subheading font-weight-bold mb-0">
             Member of House Helsinki
           </p>
-          <p className="lead pt-3">-- Since 2020 --</p>
+          <p className="lead pt-3">-- CodeName {member.roll} --</p>
         </div>
       </header>
 
@@ -49,7 +52,11 @@ const Members = () => {
                   </p>
                 </span>
               </span>
-              <img className="img-fluid" src={pic} alt="" />
+              <img
+                className="img-fluid"
+                src={`http://localhost:5000/api/product/about_p/${member.id}`}
+                alt=""
+              />
             </a>
           </div>
           <div className="col-lg-6">
@@ -63,7 +70,11 @@ const Members = () => {
                   </p>
                 </span>
               </span>
-              <img className="img-fluid" src={pic} alt="" />
+              <img
+                className="img-fluid"
+                src={`http://localhost:5000/api/product/h1_photo/${member.id}`}
+                alt=""
+              />
             </a>
           </div>
           <div className="col-lg-6">
@@ -77,7 +88,11 @@ const Members = () => {
                   </p>
                 </span>
               </span>
-              <img className="img-fluid" src={pic} alt="" />
+              <img
+                className="img-fluid"
+                src={`http://localhost:5000/api/product/h2_photo/${member.id}`}
+                alt=""
+              />
             </a>
           </div>
           <div className="col-lg-6">
@@ -91,7 +106,11 @@ const Members = () => {
                   </p>
                 </span>
               </span>
-              <img className="img-fluid" src={pic} alt="" />
+              <img
+                className="img-fluid"
+                src={`http://localhost:5000/api/product/h3_photo/${member.id}`}
+                alt=""
+              />
             </a>
           </div>
         </div>

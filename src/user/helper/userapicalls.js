@@ -26,3 +26,13 @@ export const getAllMembers = () => {
     })
     .catch((err) => console.log(err));
 };
+
+export const getOneMember = (memberId) => {
+  return fetch(`http://localhost:5000/api/members/${memberId}`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};

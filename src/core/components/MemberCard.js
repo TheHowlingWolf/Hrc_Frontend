@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../../membercard.css";
 import { getAllMembers } from "../../user/helper/userapicalls";
+import { Link } from "react-router-dom";
 
 const MemberCard = ({ member }) => {
   const propic = () => {
     return {
-      backgroundImage: `url('http://localhost:5000/api/product/photo/${member._id}')`,
+      backgroundImage: `url('http://localhost:5000/api/product/pro_photo/${member._id}')`,
     };
   };
 
@@ -25,9 +26,12 @@ const MemberCard = ({ member }) => {
                   <h2 className="font-weight-bold h6">House helsinki</h2>
                 </div>
               </div>
-              <button className="cardbut btn btn-md btn-dark text-light">
+              <Link
+                className="cardbut btn btn-md btn-dark text-light"
+                to={`/members/${member._id}`}
+              >
                 Check Out
-              </button>
+              </Link>
             </div>
           </div>
         </div>

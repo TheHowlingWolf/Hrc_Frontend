@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Base from "./Base";
 import StylePathR from "./components/StylePathR";
 import Feature from "./components/Feature";
@@ -14,7 +14,6 @@ const Home = () => {
       <Feature></Feature>
       <OurNetwork></OurNetwork>
       <ThreeQ></ThreeQ>
-
     </Base>
   );
 };
