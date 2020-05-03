@@ -17,10 +17,11 @@ const Menu = ({ history }) => {
         <div className="logo float-left">
           <Link to="/" className="scrollto">
             <img
-              src="./Helsinkilogo.png"
+              src="../img/logo.png"
               alt=""
               className="img-fluid"
               id="logohead"
+              height="100%"
             />
           </Link>
         </div>

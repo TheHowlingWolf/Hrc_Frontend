@@ -12,7 +12,7 @@ body {
 }
 
 .feature-section-home {
-  background: linear-gradient(#22232633, #22232666),
+  background: linear-gradient(#ffffff22, #22232666),
     url("./img/unnamed.png") no-repeat;
   background-size: cover;
   background-position: center;
@@ -318,6 +318,10 @@ body {
   color: #fff;
 }
 
+#logohead {
+  max-height: 70px !important;
+}
+
 /*three-ques*/
 .three-ques {
   background: #d52735;
@@ -326,4 +330,23 @@ body {
   .marginextra {
     margin-top: 400px;
   }
+}
+
+@media (max-width: 764px) {
+  .mobile-nav-toggle {
+    margin-top: 15px;
+    color: white;
+  }
+  #logohead {
+    max-height: 70px !important;
+    margin-top: -5px !important;
+  }
+}
+
+.fa-bars {
+  color: white !important;
+}
+
+.header-scrolled #logohead {
+  margin-top: -12px !important;
 }
