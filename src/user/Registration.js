@@ -107,6 +107,13 @@ const Registration = () => {
         <div className="col-md-6 offset-sm-3 text-left">
           {successMessage()}
           {errorMessage()}
+          <h6 className="text-light font-weight-bold">
+            I know this form looks bad but it's saving your IP address ::{" "}
+            <span id="ip"></span>
+          </h6>
+          <p className="lead text-white">
+            Please keep yourself away from trouble. Thank you
+          </p>
           <form action="">
             <div className="form-group">
               <label className="text-light">Name</label>
