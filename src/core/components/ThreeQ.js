@@ -1,5 +1,8 @@
 import React from "react";
 import SelfQ from "../../img/art-educational-paper-phrase-142815.jpg";
+import one from "../../img/01.jpg";
+import two from "../../img/02.jpg";
+import three from "../../img/03.jpg";
 const ThreeQ = () => {
   return (
     <section className="three-ques marginextra text-light py-5">
@@ -8,44 +11,74 @@ const ThreeQ = () => {
           <div className="col-12">
             <p className="display-3 pt-3 font-weight-bold">Three Questions</p>
             <h4 className="pb-2">Our Answer</h4>
-            <hr width="80" style={{ backgroundColor: "white" }} />
+            <hr
+              width="80"
+              className="my-0"
+              style={{ backgroundColor: "white" }}
+            />
           </div>
         </div>
       </div>
-      <div className="container-fluid d-flex h-100 py-5  text-center">
+      <div className="container h-100 py-5  text-left">
         <div className="row justify-content-center align-items-center">
-          <div className="col-4 align-self-center">
-            <img
-              src={SelfQ}
-              alt=""
-              srcset=""
-              className="img-fluid rounded-circle z-depth-2"
-              width="50%"
-            />
-            <p className="display-4 pt-3 font-weight-bold">1st Unique Ques</p>
-            <h4 className="font-weight-light">Ques Description</h4>
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src={one} alt="" />
+            </div>
           </div>
-          <div className="col-4 align-self-center">
-            <img
-              src={SelfQ}
-              alt=""
-              srcset=""
-              className="img-fluid rounded-circle z-depth-2"
-              width="50%"
-            />
-            <p className="display-4 pt-3 font-weight-bold">1st Unique Ques</p>
-            <h4 className="font-weight-light">Ques Description</h4>
+
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4 font-weight-bold text-white">
+                For those about to rock...
+              </h2>
+              <p className="lead pt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                aliquid, mollitia odio veniam sit iste esse assumenda amet
+                aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                voluptatum molestiae adipisci, beatae obcaecati.
+              </p>
+            </div>
           </div>
-          <div className="col-4 align-self-center">
-            <img
-              src={SelfQ}
-              alt=""
-              srcset=""
-              className="img-fluid rounded-circle z-depth-2"
-              width="50%"
-            />
-            <p className="display-4 pt-3 font-weight-bold">1st Unique Ques</p>
-            <h4 className="font-weight-light">Ques Description</h4>
+        </div>
+        <div className="row justify-content-center align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src={two} alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4 font-weight-bold text-white">
+                For those about to rock...
+              </h2>
+              <p className="lead pt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                aliquid, mollitia odio veniam sit iste esse assumenda amet
+                aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                voluptatum molestiae adipisci, beatae obcaecati.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img class="img-fluid rounded-circle" src={three} alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4 font-weight-bold text-white">
+                For those about to rock...
+              </h2>
+              <p className="lead pt-2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                aliquid, mollitia odio veniam sit iste esse assumenda amet
+                aperiam exercitationem, ea animi blanditiis recusandae! Ratione
+                voluptatum molestiae adipisci, beatae obcaecati.
+              </p>
+            </div>
           </div>
         </div>
       </div>

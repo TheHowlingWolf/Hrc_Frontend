@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div
       className="container-fluid text-center p-3"
-      style={{ backgroundColor: "rgb(129, 1, 1)", color: "white" }}
+      style={{ backgroundColor: "#222326", color: "white" }}
     >
       <div className="row">
         <div className="col font-weight-bold">
