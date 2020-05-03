@@ -16,3 +16,13 @@ export const signup = (user) => {
       console.log(err);
     });
 };
+
+export const getAllMembers = () => {
+  return fetch(`http://localhost:5000/api/members`, {
+    method: "GET",
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+};

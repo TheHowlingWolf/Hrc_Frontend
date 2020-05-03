@@ -4,23 +4,6 @@
   transition: 0.5s ease-in-out;
 }
 
-html,
-body {
-  background-color: #220200;
-  height: 100%;
-  overflow: hidden;
-  font-family: helvetica neue, helvetica, arial, sans-serif;
-}
-
-html h1,
-body h1 {
-  font-size: 20px;
-  font-weight: 200;
-  color: white;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-
 html h2,
 body h2 {
   font-size: 15px;
@@ -75,7 +58,7 @@ body h2 {
 #card #front #top-pic {
   height: 50%;
   width: 100%;
-  background-image: url("./dedb82803c32eba2f029a73afef25a1a.jpg");
+  background-image: url("./img/cardBack.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -114,4 +97,10 @@ body h2 {
   height: 100%;
   vertical-align: middle;
   text-align: center;
+}
+
+.cardbut {
+  position: relative;
+  bottom: 0;
+  margin-top: 130px;
 }
