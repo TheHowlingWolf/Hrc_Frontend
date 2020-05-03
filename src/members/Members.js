@@ -23,9 +23,10 @@ const Members = () => {
             <div class="divider-custom-line"></div>
           </div>
 
-          <p class="masthead-subheading font-weight-light mb-0">
-            Graphic Artist - Web Designer - Illustrator
+          <p class="masthead-subheading font-weight-bold mb-0">
+            Member of House Helsinki
           </p>
+          <p className="lead pt-3">-- Since 2020 --</p>
         </div>
       </header>
 
