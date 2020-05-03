@@ -14,9 +14,10 @@ const Home = () => {
   return (
     <Base>
       <Feature></Feature>
-      <Homevideo/>
+      <Homevideo url="https://youtu.be/PjoneqwaO_8" />
       <OurNetwork></OurNetwork>
       <ThreeQ></ThreeQ>
+      <Homevideo url="https://youtu.be/kZ71OU-QJXI" />
     </Base>
   );
 };

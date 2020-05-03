@@ -9,9 +9,15 @@ const Registration = () => {
     state: "",
     pro_photo: "",
     about_p: "",
+    about: "",
     h1_photo: "",
+    hob1: "",
     h2_photo: "",
+    hob2: "",
     h3_photo: "",
+    hob3: "",
+    fun_mem: "",
+    emb_mem: "",
     error: "",
     success: false,
     formData: "",
@@ -28,7 +34,20 @@ const Registration = () => {
   }, []);
 
   //To access above use values.name values.email or destructure it
-  const { name, roll, state, error, success, formData } = values;
+  const {
+    name,
+    roll,
+    state,
+    about,
+    hob1,
+    hob2,
+    hob3,
+    fun_mem,
+    emb_mem,
+    error,
+    success,
+    formData,
+  } = values;
 
   const handleChange = (name) => (event) => {
     const value =
@@ -116,6 +135,18 @@ const Registration = () => {
           </p>
           <form action="">
             <div className="form-group">
+              <span className="text-white">ProPic:</span>
+              <label className="btn btn-block btn-success">
+                <input
+                  onChange={handleChange("pro_photo")}
+                  type="file"
+                  name="pro_photo"
+                  accept="image"
+                  placeholder="choose a file"
+                />
+              </label>
+            </div>
+            <div className="form-group">
               <label className="text-light">Name</label>
               <input
                 className="form-control"
@@ -149,17 +180,7 @@ const Registration = () => {
               />
             </div>
             <div className="form-group">
-              <label className="btn btn-block btn-success">
-                <input
-                  onChange={handleChange("pro_photo")}
-                  type="file"
-                  name="pro_photo"
-                  accept="image"
-                  placeholder="choose a file"
-                />
-              </label>
-            </div>
-            <div className="form-group">
+              <span className="text-white">AboutPic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("about_p")}
@@ -171,37 +192,106 @@ const Registration = () => {
               </label>
             </div>
             <div className="form-group">
+              <label className="text-light">About You:</label>
+              <input
+                className="form-control"
+                type="text"
+                name="about"
+                id=""
+                onChange={handleChange("about")}
+                value={about}
+              />
+            </div>
+            <div className="form-group">
+              <span className="text-white">Hob1Pic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("h1_photo")}
                   type="file"
                   name="h1_photo"
                   accept="image"
-                  placeholder="choose a file"
+                  placeholder="Hobby 1"
                 />
               </label>
             </div>
             <div className="form-group">
+              <label className="text-light">Hobby 1:</label>
+              <input
+                className="form-control"
+                type="text"
+                name="hob1"
+                id=""
+                onChange={handleChange("hob1")}
+                value={hob1}
+              />
+            </div>
+            <div className="form-group">
+              <span className="text-white">Hob2Pic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("h2_photo")}
                   type="file"
                   name="h2_photo"
                   accept="image"
-                  placeholder="choose a file"
+                  placeholder="Hobby 2:"
                 />
               </label>
             </div>
             <div className="form-group">
+              <label className="text-light">Hobby 2:</label>
+              <input
+                className="form-control"
+                type="text"
+                name="hob2"
+                id=""
+                onChange={handleChange("hob2")}
+                value={hob2}
+              />
+            </div>
+            <div className="form-group">
+              <span className="text-white">Hob3Pic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("h3_photo")}
                   type="file"
                   name="h3_photo"
                   accept="image"
-                  placeholder="choose a file"
+                  placeholder="Hobby 3:"
                 />
               </label>
+            </div>
+            <div className="form-group">
+              <label className="text-light">Hobby 3:</label>
+              <input
+                className="form-control"
+                type="text"
+                name="hob3"
+                id=""
+                onChange={handleChange("hob3")}
+                value={hob3}
+              />
+            </div>
+            <div className="form-group">
+              <label className="text-light">Emb Moment</label>
+              <input
+                className="form-control"
+                type="text"
+                name="emb_mem"
+                id=""
+                onChange={handleChange("emb_mem")}
+                value={emb_mem}
+              />
+            </div>
+            <div className="form-group">
+              <label className="text-light">Fun Moment</label>
+              <input
+                className="form-control"
+                type="text"
+                name="fun_mem"
+                id=""
+                onChange={handleChange("fun_mem")}
+                value={fun_mem}
+              />
             </div>
             <button className="btn btn-success btn-block" onClick={onSubmit}>
               Submit
