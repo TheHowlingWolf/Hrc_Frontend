@@ -5,7 +5,7 @@ import { Jumbotron } from "reactstrap";
 import "./members.css";
 const Members = () => {
   return (
-    <section className="membeers text-light py-5">
+    <section className="membeers text-light pb-5">
       <header class="masthead text-white text-center">
         <div class="container d-flex align-items-center flex-column">
           <img
