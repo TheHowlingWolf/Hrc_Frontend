@@ -41,3 +41,7 @@ body {
   background: rgb(168, 2, 2);
   border-radius: 10px;
 }
+
+.primaryGrad {
+  background: linear-gradient(15deg, #c7170a 0%, #e32a46 100%);;
+}
