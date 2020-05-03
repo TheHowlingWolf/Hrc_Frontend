@@ -10,9 +10,7 @@ const OurNetwork = () => {
             <p className="display-3 font-weight-bolder pt-5">Our Network</p>
             <p className="h4">We Are Spread All Over Your Country</p>
           </div>
-          <div className="col-12 align-self-center">
-            <Map></Map>
-          </div>
+          <div className="col-12 align-self-center"></div>
         </div>
       </div>
     </section>
