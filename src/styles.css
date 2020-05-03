@@ -15,7 +15,7 @@ body {
     url("./img/unnamed.png") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .section-full-height {
@@ -321,4 +321,9 @@ body {
 /*three-ques*/
 .three-ques {
   background: linear-gradient(180deg, #d52735, #222326);
-}
+ }
+ @media (min-width: 1200px) {
+   .marginextra{
+     margin-top: 400px
+   }
+  }

@@ -2,7 +2,7 @@ import React from "react";
 import SelfQ from "../../img/art-educational-paper-phrase-142815.jpg";
 const ThreeQ = () => {
   return (
-    <section className="three-ques text-light py-5">
+    <section className="three-ques marginextra text-light py-5">
       <div className="container h-100 p-0 text-center">
         <div className="row justify-content-center align-items-center">
           <div className="col-12">
