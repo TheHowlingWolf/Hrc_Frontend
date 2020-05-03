@@ -10,9 +10,9 @@ const MemberCard = () => {
             <div id="top-pic"></div>
             <div id="avatar"></div>
             <div id="info-box">
-              <div class="info">
-                <h3>Dali. Debraj Sengupta</h3>
-                <h2>House Helsinki</h2>
+              <div className="info">
+                <h1>Dali. Debraj Sengupta</h1>
+                <h2>House helsinki</h2>
               </div>
             </div>
           </div>

@@ -13,7 +13,6 @@ const Home = () => {
       <Feature></Feature>
       <OurNetwork></OurNetwork>
       <ThreeQ></ThreeQ>
-      <MemberCard></MemberCard>
     </Base>
   );
 };
