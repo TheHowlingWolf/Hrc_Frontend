@@ -2,13 +2,12 @@ import React from "react";
 import { Jumbotron } from "reactstrap";
 // import SelfQ from "../../img/art-educational-paper-phrase-142815.jpg";
 import pic from "../img/naturephotography.jpg";
-
 import "./members.css";
 
 const Members = () => {
   return (
     <section
-      classNameName="membeers text-light pb-5"
+      className="membeers text-light pb-5"
       style={{ backgroundColor: "white !important" }}
     >
       <header className="masthead text-white text-center">
@@ -31,7 +30,7 @@ const Members = () => {
           <p className="masthead-subheading font-weight-bold mb-0">
             Member of House Helsinki
           </p>
-          <p classNameName="lead pt-3">-- Since 2020 --</p>
+          <p className="lead pt-3">-- Since 2020 --</p>
         </div>
       </header>
 

@@ -1,7 +1,6 @@
 import React from "react";
-import Base from "./Base";
 import Members from "../members/Members";
-
+import Base from "./Base";
 const IndiMembers = () => {
   return (
     <Base>

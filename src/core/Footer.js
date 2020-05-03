@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="row">
         <div className="col font-weight-bold">
           Made with &nbsp;
-          <i class="fa fa-gratipay fa-2x fa-spin text-danger"></i>&nbsp;&nbsp;
-          by
+          <i className="fa fa-gratipay fa-2x fa-spin text-danger"></i>
+          &nbsp;&nbsp; by
           <span className="text-danger"> &nbsp;HOUSE HELSINKI</span>
         </div>
       </div>
