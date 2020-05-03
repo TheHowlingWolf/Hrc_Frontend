@@ -8,7 +8,10 @@ const Footer = () => {
     >
       <div className="row">
         <div className="col font-weight-bold">
-          All Rights Reserved By House Helsinki @High_Radius
+          Made with &nbsp;
+          <i class="fa fa-gratipay fa-2x fa-spin text-danger"></i>&nbsp;&nbsp;
+          by
+          <span className="text-danger"> &nbsp;HOUSE HELSINKI</span>
         </div>
       </div>
     </div>

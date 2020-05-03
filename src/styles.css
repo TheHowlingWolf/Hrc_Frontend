@@ -12,7 +12,7 @@ body {
 }
 
 .feature-section-home {
-  background: linear-gradient(#22232633, #22232699),
+  background: linear-gradient(#22232633, #22232666),
     url("./img/unnamed.png") no-repeat;
   background-size: cover;
   background-position: center;
