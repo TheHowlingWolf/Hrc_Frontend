@@ -3,7 +3,7 @@ import { API } from "../../backend";
 export const signup = (user) => {
   console.log(user);
   return fetch(
-    `https://hrc-back-hosted.herokuapp.com/api/member/registration`,
+    `https://hrc-backend-app.herokuapp.com/api/member/registration`,
     {
       method: "POST",
       headers: {
@@ -21,7 +21,7 @@ export const signup = (user) => {
 };
 
 export const getAllMembers = () => {
-  return fetch(`https://hrc-back-hosted.herokuapp.com/api/members`, {
+  return fetch(`https://hrc-backend-app.herokuapp.com/api/members`, {
     method: "GET",
   })
     .then((response) => {
@@ -32,7 +32,7 @@ export const getAllMembers = () => {
 
 export const getOneMember = (memberId) => {
   return fetch(
-    `https://hrc-back-hosted.herokuapp.com/api/members/${memberId}`,
+    `https://hrc-backend-app.herokuapp.com/api/members/${memberId}`,
     {
       method: "GET",
     }

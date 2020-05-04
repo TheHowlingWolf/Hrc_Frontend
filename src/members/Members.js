@@ -5,6 +5,11 @@ import "./members.css";
 
 const Members = ({ member }) => {
   console.log(member);
+  const pro_pic = `https://hrc-backend-app.herokuapp.com/api/product/pro_photo/${member._id}`;
+  const about_p_url = `https://hrc-backend-app.herokuapp.com/api/product/about_p/${member.id}`;
+  const h1_hob_url = `https://hrc-backend-app.herokuapp.com/api/product/h1_photo/${member.id}`;
+  const h2_fun_url = `https://hrc-backend-app.herokuapp.com/api/product/h2_photo/${member.id}`;
+  const h3_qua_url = `https://hrc-backend-app.herokuapp.com/api/product/h3_photo/${member.id}`;
   return (
     <section
       className="membeers text-light pb-5"
@@ -14,7 +19,7 @@ const Members = ({ member }) => {
         <div className="container d-flex align-items-center flex-column">
           <img
             className="masthead-avatar mb-5 img-fluid rounded-circle"
-            src="./naturephotography.jpg"
+            src={pro_pic}
             alt=""
           />
           <h1 className="masthead-heading text-uppercase mb-0">
@@ -52,11 +57,7 @@ const Members = ({ member }) => {
                   </p>
                 </span>
               </span>
-              <img
-                className="img-fluid"
-                src={`http://localhost:5000/api/product/about_p/${member.id}`}
-                alt=""
-              />
+              <img className="img-fluid" src={about_p_url} alt="" />
             </a>
           </div>
           <div className="col-lg-6">
@@ -70,11 +71,7 @@ const Members = ({ member }) => {
                   </p>
                 </span>
               </span>
-              <img
-                className="img-fluid"
-                src={`http://localhost:5000/api/product/h1_photo/${member.id}`}
-                alt=""
-              />
+              <img className="img-fluid" src={h1_hob_url} alt="" />
             </a>
           </div>
           <div className="col-lg-6">
@@ -88,11 +85,7 @@ const Members = ({ member }) => {
                   </p>
                 </span>
               </span>
-              <img
-                className="img-fluid"
-                src={`http://localhost:5000/api/product/h2_photo/${member.id}`}
-                alt=""
-              />
+              <img className="img-fluid" src={h2_fun_url} alt="" />
             </a>
           </div>
           <div className="col-lg-6">
@@ -106,11 +99,7 @@ const Members = ({ member }) => {
                   </p>
                 </span>
               </span>
-              <img
-                className="img-fluid"
-                src={`http://localhost:5000/api/product/h3_photo/${member.id}`}
-                alt=""
-              />
+              <img className="img-fluid" src={h3_qua_url} alt="" />
             </a>
           </div>
         </div>

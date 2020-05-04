@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const MemberCard = ({ member }) => {
   const propic = () => {
     return {
-      backgroundImage: `url('https://hrc-back-hosted.herokuapp.com/api/product/pro_photo/${member._id}')`,
+      backgroundImage: `url('https://hrc-backend-app.herokuapp.com/api/product/pro_photo/${member._id}')`,
     };
   };
 
