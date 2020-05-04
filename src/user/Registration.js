@@ -280,7 +280,6 @@ const Registration = () => {
                 name="emb_mem"
                 id=""
                 onChange={handleChange("emb_mem")}
-                value={emb_mem}
                 disabled
               />
             </div>
@@ -292,7 +291,6 @@ const Registration = () => {
                 name="fun_mem"
                 id=""
                 onChange={handleChange("fun_mem")}
-                value={fun_mem}
                 disabled
               />
             </div>
