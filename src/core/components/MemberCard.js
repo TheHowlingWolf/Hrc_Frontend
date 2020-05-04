@@ -27,7 +27,7 @@ const MemberCard = ({ member }) => {
                 </div>
               </div>
               <Link
-                className="cardbut btn btn-md btn-dark text-light"
+                className="cardbut btn btn-md btn-outline-light rounded text-dark"
                 to={`/members/${member._id}`}
               >
                 Check Out
