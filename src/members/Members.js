@@ -10,7 +10,7 @@ const Members = ({ member }) => {
   const h1_hob_url = `https://hrc-backend-app.herokuapp.com/api/product/h1_photo/${member.id}`;
   const h2_fun_url = `https://hrc-backend-app.herokuapp.com/api/product/h2_photo/${member.id}`;
   const h3_qua_url = `https://hrc-backend-app.herokuapp.com/api/product/h3_photo/${member.id}`;
-  const about_small = member.about.substring(1, 50) + "....";
+  const about_small = member.about;
   return (
     <section
       className="membeers text-light pb-5"
@@ -45,13 +45,11 @@ const Members = ({ member }) => {
               </div>
             </div>
             <div className="col-md-6 m-0 p-0 h-100 text-left">
-              <p className="display-3 font-weight-bold">About Me......</p>
-              <p className="h2 font-weight-light pt-3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Nesciunt, fugit facere quod qui quidem rem dolorum soluta atque
-                doloremque ipsam. Quisquam dolor molestias at sint rerum modi,
-                necessitatibus fugit harum.
+              <p className="display-3 font-weight-bold">
+                <i className="fa fa-gratipay fa-3x text-danger"></i>About
+                Me......
               </p>
+              <p className="h2 font-weight-light pt-3">{member.about}</p>
             </div>
           </div>
         </div>
@@ -60,7 +58,7 @@ const Members = ({ member }) => {
       <div className="container">
         <div className="content-section-heading text-center">
           <p className="h2 text-dark font-weight-bold mb-5">
-            Here are 4 things I would like to share
+            A Peak Into My Life...
           </p>
         </div>
         <div className="row no-gutters">
@@ -69,7 +67,7 @@ const Members = ({ member }) => {
               <span className="caption">
                 <span className="caption-content">
                   <h2>Who Am I</h2>
-                  <p className="mb-0">{about_small}</p>
+                  <p className="lead mb-0">{about_small}</p>
                 </span>
               </span>
               <img className="img-fluid" src={about_p_url} alt="" />
@@ -80,7 +78,7 @@ const Members = ({ member }) => {
               <span className="caption">
                 <span className="caption-content">
                   <h2>What I love to do</h2>
-                  <p className="mb-0">{member.hob1}</p>
+                  <p className="lead mb-0">{member.hob1}</p>
                 </span>
               </span>
               <img className="img-fluid" src={h1_hob_url} alt="" />

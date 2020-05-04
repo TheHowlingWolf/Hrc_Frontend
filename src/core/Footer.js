@@ -8,7 +8,9 @@ const Footer = () => {
     >
       <div className="row">
         <div className="col font-weight-bold">
-          Made with &nbsp;
+          Made from scratch using
+          <span className="text-danger"> &nbsp;MERN </span>
+          with &nbsp;
           <i className="fa fa-gratipay fa-2x fa-spin text-danger"></i>
           &nbsp;&nbsp; by
           <span className="text-danger"> &nbsp;HOUSE HELSINKI</span>

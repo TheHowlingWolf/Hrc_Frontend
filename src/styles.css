@@ -12,7 +12,7 @@ body {
 }
 
 .feature-section-home {
-  background: linear-gradient(#ffffff22, #22232666),
+  background: linear-gradient(#22232622, #22232699),
     url("./img/unnamed.png") no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,6 +22,14 @@ body {
 .feature-section-home2 {
   background: linear-gradient(#ffffff22, #22232666),
     url("./img/f2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.feature-section-home3 {
+  background: linear-gradient(#ffffff22, #22232666),
+    url("./img/f3.png") no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
