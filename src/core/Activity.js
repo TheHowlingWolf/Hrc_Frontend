@@ -8,6 +8,7 @@ const Activity = () => {
   return (
     <Base>
       <Feature3></Feature3>
+      <CardBhaiya></CardBhaiya>
       <div
         className="container-fluid h-100 p-0 text-center"
         style={{ backgroundColor: "rgb(213, 39, 53" }}
@@ -34,7 +35,6 @@ const Activity = () => {
         </div>
       </div>
       <Homevideo url="https://youtu.be/kZ71OU-QJXI" />
-      <CardBhaiya></CardBhaiya>
     </Base>
   );
 };

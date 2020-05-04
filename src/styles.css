@@ -35,6 +35,15 @@ body {
   height: 100vh;
 }
 
+.bhaiyaCard {
+  background: #b81703;
+  background-size: contain;
+  background-position: center;
+}
+.bhaiyaBack {
+  background: url("./img/ElProf.jpg") no-repeat;
+}
+
 .section-full-height {
   height: 90vh;
 }
