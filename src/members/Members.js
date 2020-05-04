@@ -46,7 +46,7 @@ const Members = ({ member }) => {
             </div>
             <div className="col-md-6 m-0 p-0 h-100 text-left">
               <p className="display-3 font-weight-bold">
-                <i className="fa fa-gratipay fa-3x text-danger"></i>About
+                <i className="fa fa-gratipay fa-2x text-danger"></i>About
                 Me......
               </p>
               <p className="h2 font-weight-light pt-3">{member.about}</p>
