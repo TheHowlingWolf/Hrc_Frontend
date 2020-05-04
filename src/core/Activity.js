@@ -34,7 +34,7 @@ const Activity = () => {
           </div>
         </div>
       </div>
-      <Homevideo url="https://youtu.be/kZ71OU-QJXI" />
+      <Homevideo url="https://youtu.be/cOouEX6DABM" />
     </Base>
   );
 };
