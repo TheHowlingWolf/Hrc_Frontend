@@ -9,10 +9,14 @@ const IndiMembers = ({ match }) => {
     state: "",
     roll: "",
     id: "",
+    about: "",
+    hob1: "",
+    hob2: "",
+    hob3: "",
     error: "",
   });
 
-  const { name, state, roll, id, error } = member;
+  const { name, state, roll, id, about, hob1, hob2, hob3, error } = member;
 
   const preload = (memberId) => {
     getOneMember(memberId).then((data) => {
@@ -29,6 +33,10 @@ const IndiMembers = ({ match }) => {
           roll: data.roll,
           state: data.state,
           id: data._id,
+          about: data.about,
+          hob1: data.hob1,
+          hob2: data.hob2,
+          hob3: data.hob3,
         });
       }
     });

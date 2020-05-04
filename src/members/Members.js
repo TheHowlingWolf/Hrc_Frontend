@@ -4,99 +4,105 @@ import pic from "../img/naturephotography.jpg";
 import "./members.css";
 
 const Members = ({ member }) => {
-  console.log(member);
-  const pro_pic = `https://hrc-backend-app.herokuapp.com/api/product/pro_photo/${member._id}`;
+  console.log("mem:", member);
+  const pro_pic = `https://hrc-backend-app.herokuapp.com/api/product/pro_photo/${member.id}`;
   const about_p_url = `https://hrc-backend-app.herokuapp.com/api/product/about_p/${member.id}`;
   const h1_hob_url = `https://hrc-backend-app.herokuapp.com/api/product/h1_photo/${member.id}`;
   const h2_fun_url = `https://hrc-backend-app.herokuapp.com/api/product/h2_photo/${member.id}`;
   const h3_qua_url = `https://hrc-backend-app.herokuapp.com/api/product/h3_photo/${member.id}`;
+  const about_small = member.about.substring(1, 50) + "....";
   return (
     <section
       className="membeers text-light pb-5"
       style={{ backgroundColor: "white !important" }}
     >
       <header className="masthead text-white text-center">
-        <div className="container d-flex align-items-center flex-column">
-          <img
-            className="masthead-avatar mb-5 img-fluid rounded-circle"
-            src={pro_pic}
-            alt=""
-          />
-          <h1 className="masthead-heading text-uppercase mb-0">
-            {member.name}
-          </h1>
+        <div className="container h-100 p-0">
+          <div className="row justify-content-center align-items-center">
+            <div className="col-md-6 align-self-center">
+              <div className="container d-flex align-items-center flex-column">
+                <img
+                  className="masthead-avatar mb-5 img-fluid rounded-circle"
+                  src={pro_pic}
+                  alt=""
+                />
+                <h1 className="masthead-heading text-uppercase mb-0">
+                  {member.name}
+                </h1>
 
-          <div className="divider-custom divider-light">
-            <div className="divider-custom-line"></div>
-            <div className="divider-custom-icon">
-              <i className="fa fa-star"></i>
+                <div className="divider-custom divider-light">
+                  <div className="divider-custom-line"></div>
+                  <div className="divider-custom-icon">
+                    <i className="fa fa-star"></i>
+                  </div>
+                  <div className="divider-custom-line"></div>
+                </div>
+
+                <p className="masthead-subheading font-weight-bold mb-0">
+                  Member of House Helsinki
+                </p>
+                <p className="lead pt-3">-- CodeName {member.roll} --</p>
+              </div>
             </div>
-            <div className="divider-custom-line"></div>
+            <div className="col-md-6 m-0 p-0 h-100 text-left">
+              <p className="display-3 font-weight-bold">About Me......</p>
+              <p className="h2 font-weight-light pt-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Nesciunt, fugit facere quod qui quidem rem dolorum soluta atque
+                doloremque ipsam. Quisquam dolor molestias at sint rerum modi,
+                necessitatibus fugit harum.
+              </p>
+            </div>
           </div>
-
-          <p className="masthead-subheading font-weight-bold mb-0">
-            Member of House Helsinki
-          </p>
-          <p className="lead pt-3">-- CodeName {member.roll} --</p>
         </div>
       </header>
 
       <div className="container">
         <div className="content-section-heading text-center">
-          <h3 className="text-secondary mb-0">Portfolio</h3>
-          <h2 className="mb-5">Recent Projects</h2>
+          <p className="h2 text-dark font-weight-bold mb-5">
+            Here are 4 things I would like to share
+          </p>
         </div>
         <div className="row no-gutters">
-          <div className="col-lg-6">
+          <div className="col-lg-6 p-1">
             <a className="portfolio-item" href="#">
               <span className="caption">
                 <span className="caption-content">
-                  <h2>Stationary</h2>
-                  <p className="mb-0">
-                    A yellow pencil with envelopes on a clean, blue backdrop!
-                  </p>
+                  <h2>Who Am I</h2>
+                  <p className="mb-0">{about_small}</p>
                 </span>
               </span>
               <img className="img-fluid" src={about_p_url} alt="" />
             </a>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 p-1">
             <a className="portfolio-item" href="#">
               <span className="caption">
                 <span className="caption-content">
-                  <h2>Ice Cream</h2>
-                  <p className="mb-0">
-                    A dark blue background with a colored pencil, a clip, and a
-                    tiny ice cream cone!
-                  </p>
+                  <h2>What I love to do</h2>
+                  <p className="mb-0">{member.hob1}</p>
                 </span>
               </span>
               <img className="img-fluid" src={h1_hob_url} alt="" />
             </a>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 p-1">
             <a className="portfolio-item" href="#">
               <span className="caption">
                 <span className="caption-content">
-                  <h2>Strawberries</h2>
-                  <p className="mb-0">
-                    Strawberries are such a tasty snack, especially with a
-                    little sugar on top!
-                  </p>
+                  <h2>A Funny Memory</h2>
+                  <p className="mb-0">{member.hob2}</p>
                 </span>
               </span>
               <img className="img-fluid" src={h2_fun_url} alt="" />
             </a>
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6 p-1">
             <a className="portfolio-item" href="#">
               <span className="caption">
                 <span className="caption-content">
-                  <h2>Workspace</h2>
-                  <p className="mb-0">
-                    A yellow workspace with some scissors, pencils, and other
-                    objects.
-                  </p>
+                  <h2>My Quaranting Life</h2>
+                  <p className="mb-0">{member.hob3}</p>
                 </span>
               </span>
               <img className="img-fluid" src={h3_qua_url} alt="" />
