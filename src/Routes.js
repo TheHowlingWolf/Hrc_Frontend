@@ -4,18 +4,15 @@ import Home from "./core/Home";
 import Registration from "./user/Registration";
 import Member from "./core/Member";
 import IndiMembers from "./core/IndiMembers";
-import Activity from "./core/Activity";
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
         <Route exact path="/" component={Registration} />
-        {/* 
-        <Route exact path="/members" component={Member} />
+        {/* <Route exact path="/members" component={Member} />
         <Route exact path="/members/:memberId" component={IndiMembers} />
-        <Route exact path="/registration" component={Registration} />
-        <Route exact path="/activity" component={Activity} /> */}
+        <Route exact path="/registration" component={Registration} /> */}
       </Switch>
     </Router>
   );
