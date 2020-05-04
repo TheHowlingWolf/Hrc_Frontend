@@ -20,7 +20,7 @@ const Home = () => {
       <Sugar
         background="linear-gradient(180deg, #f95759 0%, #922E2F 100%)"
         color={"#f7f7f7"}
-        time={1800}
+        time={4000}
       />
     </Base>
   );
