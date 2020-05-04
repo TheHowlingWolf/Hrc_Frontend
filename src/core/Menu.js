@@ -15,7 +15,7 @@ const Menu = ({ history }) => {
     <header id="header">
       <div className="container p-0">
         <div className="logo float-left">
-          <Link to="/" className="scrollto">
+          <a href="/" className="scrollto">
             <img
               src="../img/logo.png"
               alt=""
@@ -23,18 +23,29 @@ const Menu = ({ history }) => {
               id="logohead"
               height="100%"
             />
-          </Link>
+          </a>
         </div>
 
         <nav className="main-nav float-right d-none d-lg-block">
           <ul>
             <li>
-              <Link
+            <li>
+              <a
                 style={currenttab(history, "/")}
                 className="nav-link"
-                to="/"
+                href="/"
               >
                 Home
+              </a>
+            </li>
+            </li>
+            <li>
+              <Link
+                style={currenttab(history, "/activity")}
+                className="nav-link"
+                to="/activity"
+              >
+                Activity
               </Link>
             </li>
             <li>
