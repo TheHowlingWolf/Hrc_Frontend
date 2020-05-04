@@ -73,6 +73,7 @@ const Registration = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    document.querySelector(".regSub").disabled = true;
     setValues({ ...values, error: "" });
     signup(formData) //calling signup backend call from auth helper
       .then((data) => {
@@ -293,7 +294,10 @@ const Registration = () => {
                 value={fun_mem}
               />
             </div>
-            <button className="btn btn-success btn-block" onClick={onSubmit}>
+            <button
+              className="regSub btn btn-success btn-block"
+              onClick={onSubmit}
+            >
               Submit
             </button>
           </form>
