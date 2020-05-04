@@ -30,7 +30,7 @@ const Menu = ({ history }) => {
           <ul>
             <li>
               <Link
-                style={currenttab(history, "/cart")}
+                style={currenttab(history, "/")}
                 className="nav-link"
                 to="/"
               >
@@ -39,7 +39,7 @@ const Menu = ({ history }) => {
             </li>
             <li>
               <Link
-                style={currenttab(history, "/cart")}
+                style={currenttab(history, "/members")}
                 className="nav-link"
                 to="/members"
               >
