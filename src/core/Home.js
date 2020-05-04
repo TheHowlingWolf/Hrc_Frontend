@@ -6,6 +6,7 @@ import Homevideo from "./components/Homevideo";
 import OurNetwork from "./components/OurNetwork";
 import ThreeQ from "./components/ThreeQ";
 import MemberCard from "./components/MemberCard";
+import { Sugar } from "react-preloaders";
 
 import "../styles.css";
 
@@ -16,6 +17,10 @@ const Home = () => {
 
       <OurNetwork></OurNetwork>
       <ThreeQ></ThreeQ>
+      <Sugar
+        background="linear-gradient(180deg, #f95759 0%, #922E2F 100%)"
+        color={"#f7f7f7"}
+      />
     </Base>
   );
 };
