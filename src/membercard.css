@@ -1,8 +1,4 @@
 /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-* {
-  box-sizing: border-box;
-  transition: 0.5s ease-in-out;
-}
 
 html h2,
 body h2 {

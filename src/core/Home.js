@@ -8,7 +8,6 @@ import ThreeQ from "./components/ThreeQ";
 import MemberCard from "./components/MemberCard";
 
 import "../styles.css";
-import "../../node_modules/video-react/dist/video-react.css";
 
 const Home = () => {
   return (

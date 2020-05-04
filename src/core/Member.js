@@ -38,7 +38,7 @@ const Member = () => {
           {members.map((member, index) => {
             console.log(member);
             return (
-              <div key={index} className="col-4 mb-4">
+              <div key={index} className="col-3">
                 <MemberCard member={member} />
               </div>
             );

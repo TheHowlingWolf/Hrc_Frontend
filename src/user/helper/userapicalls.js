@@ -2,13 +2,16 @@ import { API } from "../../backend";
 
 export const signup = (user) => {
   console.log(user);
-  return fetch(`http://localhost:5000/api/member/registration`, {
-    method: "POST",
-    headers: {
-      Accept: "application/json",
-    },
-    body: user,
-  })
+  return fetch(
+    `https://hrc-back-hosted.herokuapp.com/api/member/registration`,
+    {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+      },
+      body: user,
+    }
+  )
     .then((response) => {
       return response.json();
     })
@@ -18,7 +21,7 @@ export const signup = (user) => {
 };
 
 export const getAllMembers = () => {
-  return fetch(`http://localhost:5000/api/members`, {
+  return fetch(`https://hrc-back-hosted.herokuapp.com/api/members`, {
     method: "GET",
   })
     .then((response) => {
@@ -28,9 +31,12 @@ export const getAllMembers = () => {
 };
 
 export const getOneMember = (memberId) => {
-  return fetch(`http://localhost:5000/api/members/${memberId}`, {
-    method: "GET",
-  })
+  return fetch(
+    `https://hrc-back-hosted.herokuapp.com/api/members/${memberId}`,
+    {
+      method: "GET",
+    }
+  )
     .then((response) => {
       return response.json();
     })
