@@ -19,6 +19,14 @@ body {
   height: 100vh;
 }
 
+.feature-section-home2 {
+  background: linear-gradient(#ffffff22, #22232666),
+    url("./img/f2.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
 .section-full-height {
   height: 90vh;
 }

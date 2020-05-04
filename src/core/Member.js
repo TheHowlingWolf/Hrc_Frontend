@@ -4,6 +4,7 @@ import Feature from "./components/Feature";
 import MemberCard from "./components/MemberCard";
 import "../membercard.css";
 import { getAllMembers } from "../user/helper/userapicalls";
+import Feature2 from "./components/Feature2";
 const Member = () => {
   const [members, setMembers] = useState([]);
 
@@ -25,8 +26,11 @@ const Member = () => {
 
   return (
     <Base>
-      <Feature></Feature>
-      <div className="container-fluid h-100 text-center text-white">
+      <Feature2></Feature2>
+      <div
+        className="container-fluid h-100 text-center text-white"
+        style={{ backgroundColor: "#220200" }}
+      >
         <div className="row justify-content-center align-items-center">
           <div className="col-12">
             <p className="display-3 pt-3 font-weight-bold">Our Members</p>

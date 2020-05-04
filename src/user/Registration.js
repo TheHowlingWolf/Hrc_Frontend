@@ -16,8 +16,8 @@ const Registration = () => {
     hob2: "",
     h3_photo: "",
     hob3: "",
-    fun_mem: "",
-    emb_mem: "",
+    fun_mem: "Not Needed To Fill Here",
+    emb_mem: "Not Needed To Fill Here",
     error: "",
     success: false,
     formData: "",
@@ -204,7 +204,7 @@ const Registration = () => {
               />
             </div>
             <div className="form-group">
-              <span className="text-white">Hob1Pic:</span>
+              <span className="text-white">Hobby Pic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("h1_photo")}
@@ -216,7 +216,7 @@ const Registration = () => {
               </label>
             </div>
             <div className="form-group">
-              <label className="text-light">Hobby 1:</label>
+              <label className="text-light">Hobby :</label>
               <input
                 className="form-control"
                 type="text"
@@ -227,7 +227,7 @@ const Registration = () => {
               />
             </div>
             <div className="form-group">
-              <span className="text-white">Hob2Pic:</span>
+              <span className="text-white">Fun/Emb Pic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("h2_photo")}
@@ -239,7 +239,7 @@ const Registration = () => {
               </label>
             </div>
             <div className="form-group">
-              <label className="text-light">Hobby 2:</label>
+              <label className="text-light">Fun/Emb Text:</label>
               <input
                 className="form-control"
                 type="text"
@@ -250,7 +250,7 @@ const Registration = () => {
               />
             </div>
             <div className="form-group">
-              <span className="text-white">Hob3Pic:</span>
+              <span className="text-white">Quarantine Pic:</span>
               <label className="btn btn-block btn-success">
                 <input
                   onChange={handleChange("h3_photo")}
@@ -262,7 +262,7 @@ const Registration = () => {
               </label>
             </div>
             <div className="form-group">
-              <label className="text-light">Hobby 3:</label>
+              <label className="text-light">Quarantine Moment:</label>
               <input
                 className="form-control"
                 type="text"
@@ -272,7 +272,7 @@ const Registration = () => {
                 value={hob3}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group d-none">
               <label className="text-light">Emb Moment</label>
               <input
                 className="form-control"
@@ -281,9 +281,10 @@ const Registration = () => {
                 id=""
                 onChange={handleChange("emb_mem")}
                 value={emb_mem}
+                disabled
               />
             </div>
-            <div className="form-group">
+            <div className="form-group d-none">
               <label className="text-light">Fun Moment</label>
               <input
                 className="form-control"
@@ -292,6 +293,7 @@ const Registration = () => {
                 id=""
                 onChange={handleChange("fun_mem")}
                 value={fun_mem}
+                disabled
               />
             </div>
             <button
