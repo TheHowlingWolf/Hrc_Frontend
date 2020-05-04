@@ -2,6 +2,7 @@ import React from "react";
 import Base from "./Base";
 import Feature3 from "./components/Feature3";
 import Homevideo from "./components/Homevideo";
+import CardBhaiya from "./components/CardBhaiya";
 
 const Activity = () => {
   return (
@@ -33,6 +34,7 @@ const Activity = () => {
         </div>
       </div>
       <Homevideo url="https://youtu.be/kZ71OU-QJXI" />
+      <CardBhaiya></CardBhaiya>
     </Base>
   );
 };
