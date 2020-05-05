@@ -34,7 +34,7 @@ const Member = () => {
         <div className="row justify-content-center align-items-center">
           <div className="col-12">
             <p className="display-3 pt-3 font-weight-bold">Our Members</p>
-            <h4 className="pb-2">Good Things Take Time To Show Up!</h4>
+            <h4 className="pb-2">Good things take time to show up. Hold ON!</h4>
             <hr width="80" style={{ backgroundColor: "white" }} />
           </div>
         </div>
